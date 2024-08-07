@@ -1,0 +1,9 @@
+name: git workflow
+
+on: push
+
+jobs:
+  echo-print:
+    runs-on: ubuntu-latest
+    steps:
+     - run: echo "Harish workflow"

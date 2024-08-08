@@ -1,0 +1,27 @@
+name: 03 - Workflow Runners.
+
+on: 
+  push
+
+jobs:
+  run-on-ubuntu-machine:
+    runs-on: ubuntu-latest
+    steps:
+     - run: echo "The version is $RUNNER_OS"
+  run-on-windows:
+    runs-on: windows-latest
+    steps:
+    - name: shell
+      shell: bash
+      run: echo "The version is $RUNNER_OS"
+  run-on-macos:
+    runs-on: macos-latest
+    steps: 
+    - name: shell 
+      shell: bash 
+      run: echo "I'm running on bash."
+      
+      
+     
+ 
+  

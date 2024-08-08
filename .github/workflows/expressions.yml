@@ -1,13 +1,13 @@
 name: Workflow expression
 on:
-  push:
-  workflow_dispatch:
-    inputs:
-     debug: 
-    type: boolean
-    default: false
+ push:
+ workflow_dispatch:
+   inputs:
+    debug: 
+     type: boolean
+     default: false
 jobs:
-  echo:
+ echo:
   runs-on: ubuntu-latest
   steps:
    - name: '[debug] Print startup info'

@@ -17,7 +17,7 @@ jobs:
   run-on-macos:
     runs-on: macos-latest
     steps: 
-    - name: shell 
+    - name: Show OS 
       shell: bash 
       run: echo "I'm running on bash."
       
